@@ -15,28 +15,28 @@ concurrency:
 
 jobs:
   deploy:
-    environnet:
-    name: github-pages
-    url: ${{ steps.github_pages.outputs.url }}
-  runs-on: ubuntu-latest
-  steps: 
-    - name: Checkout
-      uses: actions/checkout@v4
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 20
-        cache: 'npm'
-    - name: Install Dependencies
-      run: npm install
-    - name: Build
-      run: npm run build
-    - name: Setup Github Pages
-      uses: actions/configure-pages@v4
-    - name: Upload Dist Folder to Github Pages
-      uses: actions/upload-pages-artifacts@v3
-      with:
-      path: './dist'
-    - name: Deploy to Github Pages
-      id: deploynet
-      uses: actions/deploy-pages@v4
+    environment:
+      name: github-pages
+      url: ${{ steps.github_pages.outputs.url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          cache: 'npm'
+      - name: Install Dependencies
+        run: npm install
+      - name: Build
+        run: npm run build
+      - name: Setup Github Pages
+        uses: actions/configure-pages@v4
+      - name: Upload Dist Folder to Github Pages
+        uses: actions/upload-pages-artifacts@v3
+        with:
+        path: './dist'
+      - name: Deploy to Github Pages
+        id: deploynet
+        uses: actions/deploy-pages@v4
