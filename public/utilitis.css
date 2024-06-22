@@ -1,0 +1,31 @@
+.m-4 {
+    margin: var(--base-4);
+}
+
+.m-2 {
+    margin: calc(var(--base-4) / 2);
+}
+
+.mx-4 {
+    margin: inherit var(--base-4);
+}
+
+.mx-2 {
+    margin:inherit calc(var(--base-4) / 2);
+}
+
+.my-4 {
+    margin: inherit var(--base-4);
+}
+
+.my-2 {
+    margin:inherit calc(var(--base-4) / 2);
+}
+
+.p-4 {
+    margin: var(--base-4);
+}
+
+.p-2 {
+    margin: calc(var(--base-4) / 2);
+}
