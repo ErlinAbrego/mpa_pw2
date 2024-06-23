@@ -2,49 +2,117 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--<link rel="stylesheet" href="/estilo.css"> -->
     <link rel="stylesheet" href="less/estilo.less" />
     <link rel="stylesheet" href="tailwindcss/index.css" />
-    <title>Vite App</title>
+    <title>Portafolio E-A</title>
   </head>
   <body>
     <header>
       <section class="branding">
-        <h1>Hola mundo</h1>
+        <h1>Portafolio Erlin-Abrego</h1>
       </section>
       <nav>
         <ul>
-          <li><a href="#">Menu 1</a></li>
-          <li><a href="#">Menu 2</a></li>
-          <li><a href="#">Menu 3</a></li>
-          <li><a href="#">Menu 4</a></li>
+          <li><a href="#sobre-mi">Sobre Mi</a></li>
+          <li><a href="#contactame">Contactame</a></li>
         </ul>
       </nav>
     </header>
     
     <main>
-      <img class="inline-block mx-4 my-4" src="https://placeholder.com/150x150" alt="">
-      <img class="mx-4" src="https://placeholder.com/150x150" alt="">
       <section class="grid">
         <div class="row">
-          <div class="col-6 col-md-4 col-l-2">
-            1
+          <div class="col-8 col-md-12 col-l-6 text">
+            <h2 class="text-500 my-6 p-4">Sobre Mi</h2>
+            <p class="text-500 p-4">Soy Erlin Levi Ayala Abrego, tengo 21 años de edad, soy pasante universitario de la carrera de Ciencias de la Computación. Actualmente, estoy por culminar mis estudios, lo que me llena de emoción y expectativas para el futuro.
+            <br> 
+            Mi interés por las redes y las telecomunicaciones me ha llevado a explorar este fascinante campo. Además de mis estudios, trabajo en soporte técnico NOC, lo que me ha brindado una valiosa experiencia en la resolución de problemas tecnológicos y la atención a los usuarios.</p>
+            
+            <p class="text-500 p-4">Soy de La Virtud, departamento de Lempira.
+                En el año 2012 comencé mis estudios en el Instituto Gubernamental Técnico Comunitario La Virtud (IGTC La Virtud). Culmine mis estudios en el año 2019 graduandome de bachiller en Ciencias y Humanidades. Actualmente estudio en la Universidad Catolica de Honduras (Unicah), la carrera de Ingenieria en Ciencias de la Computacion. Pertenezco al campus de Santa Rosa de Lima.</p>
           </div>
-          <div class="col-6 col-md-8 col-l-10">
-            2
+          <br>
+
+          <div class="col-8 col-md-12 col-l-6 image p-4">
+            <img src="/img/image1.jpg" alt="Placeholder Image">
           </div>
         </div>
       </section>
-      <section>
-        <h2>tailwindcss</h2>
-        <p class="text-red-500 my-4 p-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, voluptas incidunt! Ratione similique temporibus quibusdam fuga porro molestias amet ad iusto ipsa quo veritatis unde accusantium in illo, a non?</p>
-        <button class="btn-primary">Save changes</button>
-        <button class="btn-secondary">Save changes</button>
-        <button class="btn">Save changes</button>
-        <button class="btn-circular">buton</button>
+
+      <!--CARD-->
+      <section id="Menú">
+        <h2 class="text-500 my-6 p-4">Proyectos</h2>
+        <section class="grid">
+          <div class="row">
+            <div class="col-6 col-md-6 col-l-4">
+              <div class="card">
+                <img src="/img/image3.jpg" class="card-img-top" alt="App Web">
+                <div class="card-body">
+                  <h5 class="card-title">App Web</h5>
+                  <p class="card-text">Proyecto: TaskMaster Descripción: TaskMaster es una aplicación web diseñada para mejorar la productividad y la gestión de tareas en equipos de trabajo. La interfaz es intuitiva y fácil de usar, permitiendo a los usuarios crear, asignar y seguir el progreso de las tareas en tiempo real. La aplicación incluye características como notificaciones automáticas, integración con calendarios y herramientas de colaboración en línea. Además, ofrece análisis detallados del rendimiento del equipo.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-6 col-l-4">
+              <div class="card">
+                <img src="/img/image4.jpg" class="card-img-top" alt="Café Caliente">
+                <div class="card-body">
+                  <h5 class="card-title">Landing Page</h5>
+                  <p class="card-text">Proyecto: EcoTravel Descripción: La landing page de EcoTravel está diseñada para captar la atención de los viajeros interesados en el turismo sostenible. La página presenta un diseño limpio y moderno, con imágenes vibrantes de destinos ecológicos. Incluye una llamada a la acción prominente para suscribirse a nuestro boletín y recibir ofertas exclusivas. Además, hay secciones destacadas que explican los beneficios del turismo sostenible, testimonios de clientes satisfechos y un formulario de contacto para consultas.</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="col-6 col-md-6 col-l-4">
+              <div class="card">
+                <img src="/img/image2.jpg" class="card-img-top" alt="App Móvil">
+                <div class="card-body">
+                  <h5 class="card-title">App Móvil</h5>
+                  <p class="card-text">Proyecto: FitTrack Descripción: FitTrack es una aplicación móvil diseñada para ayudar a los usuarios a alcanzar sus objetivos de fitness y salud. La app ofrece planes de entrenamiento personalizados, seguimiento de actividades físicas y monitoreo de la nutrición. La interfaz es amigable y está optimizada para dispositivos móviles, con gráficos interactivos que muestran el progreso del usuario. Además, FitTrack incluye una comunidad en línea donde los usuarios pueden compartir sus logros, obtener consejos de expertos y participar en desafíos de fitness.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+
+      <section id="contactame">
+        <h2 class="text-500 my-6 p-4">Contactame</h2>
+        <form>
+          <div class="form-group">
+            <label for="name">Nombre Completo</label>
+            <input type="text" id="name" name="name" placeholder="Digite su nombre completo" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Correo</label>
+            <input type="email" id="email" name="email" placeholder="Digite su correo electrónico" required>
+          </div>
+          <div class="form-group">
+            <label for="description">Descripción</label>
+            <textarea id="description" name="description" placeholder="Escriba su mensaje" required></textarea>
+          </div>
+          <button type="submit" class="btn-primary">Enviar</button>
+        </form>
       </section>
     </main>
+
+    <footer>
+      <div class="copyright">
+        Erlin-Abrego ©2024
+      </div>
+      <nav class="social-nav">
+        <a href="https://facebook.com">Facebook</a>
+        <a href="https://instagram.com">Instagram</a>
+      </nav>
+      <nav class="footer-nav">
+        <a href="#">Sobre mí</a>
+        <a href="#contactame">Contacto</a>
+      </nav>
+    </footer>
+    
+    
   </body>
 </html>
