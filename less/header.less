@@ -35,6 +35,27 @@ main {
         color: @alternate-text-color;
     }
 
+    .section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        .text {
+            padding: @base-2;
+            color: @secundary-text-color;
+        }
+
+        .image {
+            padding: @base-2;
+            text-align: center;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+
     #Menú {
         padding: @defaul-padding;
 
@@ -45,34 +66,38 @@ main {
 
         .card {
             width: 300px;
-            height: 500px;
             background-color: @secundary-color;
             border: 1px solid @primary-color;
             border-radius: @base-2;
             overflow: hidden;
             text-align: center;
-            margin: @base-2 auto;
+            margin: @base-4 auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
             img {
                 width: 100%;
                 height: auto;
+                margin-bottom: @base-2;
             }
 
             .card-body {
-                padding: @base-2;
+                padding: @base-4;
                 color: @secundary-text-color;
 
-                .card-title {
-                    font-size: 1.25rem;
+                h5 {
+                    font-size: 1.5rem;
                     margin-bottom: @base-2;
+                    color: @primary-color;
                 }
 
-                .card-text {
-                    text-align: justify;
-                    font-size: 0.875rem;
+                p {
+                    text-align: left;
+                    font-size: 1rem;
                 }
             }
         }
+
+
     }
 
     #contactame {
@@ -97,6 +122,7 @@ main {
                     margin-bottom: @base-2;
                     color: @secundary-text-color;
                 }
+
                 input,
                 textarea {
                     width: 100%;
@@ -105,6 +131,7 @@ main {
                     border-radius: @base-2;
                     font-size: 1rem;
                 }
+
                 textarea {
                     resize: vertical;
                     height: 100px;
